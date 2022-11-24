@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 19 juil. 2022 à 17:42
+-- Généré le : jeu. 24 nov. 2022 à 21:39
 -- Version du serveur : 10.4.22-MariaDB
 -- Version de PHP : 7.4.27
 
@@ -45,27 +45,28 @@ CREATE TABLE `admin_menu` (
 
 INSERT INTO `admin_menu` (`id`, `parent_id`, `order`, `title`, `icon`, `uri`, `permission`, `created_at`, `updated_at`) VALUES
 (1, 0, 1, 'Dashboard', 'fa-bar-chart', '/', NULL, NULL, NULL),
-(2, 0, 13, 'Admin', 'fa-tasks', '', NULL, NULL, '2022-07-18 02:55:24'),
-(3, 2, 14, 'Users', 'fa-users', 'auth/users', NULL, NULL, '2022-07-18 02:55:24'),
-(4, 2, 15, 'Roles', 'fa-user', 'auth/roles', NULL, NULL, '2022-07-18 02:55:24'),
-(5, 2, 16, 'Permission', 'fa-ban', 'auth/permissions', NULL, NULL, '2022-07-18 02:55:24'),
-(6, 2, 17, 'Menu', 'fa-bars', 'auth/menu', NULL, NULL, '2022-07-18 02:55:24'),
-(7, 2, 18, 'Operation log', 'fa-history', 'auth/logs', NULL, NULL, '2022-07-18 02:55:24'),
-(8, 0, 10, 'Mes Articles', 'fa-bookmark', '/#', '*', '2022-07-15 16:39:00', '2022-07-18 02:55:24'),
-(9, 8, 11, 'Catégorie d\'article', 'fa-anchor', '/article-types', '*', '2022-07-15 16:40:19', '2022-07-18 02:55:24'),
-(10, 8, 12, 'Articles', 'fa-align-left', '/articles', '*', '2022-07-15 16:40:59', '2022-07-18 02:55:24'),
+(2, 0, 17, 'Admin', 'fa-tasks', '', NULL, NULL, '2022-11-25 01:55:36'),
+(3, 2, 18, 'Users', 'fa-users', 'auth/users', NULL, NULL, '2022-11-25 01:55:36'),
+(4, 2, 19, 'Roles', 'fa-user', 'auth/roles', NULL, NULL, '2022-11-25 01:55:36'),
+(5, 2, 20, 'Permission', 'fa-ban', 'auth/permissions', NULL, NULL, '2022-11-25 01:55:36'),
+(6, 2, 21, 'Menu', 'fa-bars', 'auth/menu', NULL, NULL, '2022-11-25 01:55:36'),
+(7, 2, 22, 'Operation log', 'fa-history', 'auth/logs', NULL, NULL, '2022-11-25 01:55:36'),
+(8, 0, 14, 'Mes Articles', 'fa-bookmark', '/#', '*', '2022-07-15 16:39:00', '2022-11-25 01:55:36'),
+(9, 8, 15, 'Catégorie d\'article', 'fa-anchor', '/article-types', '*', '2022-07-15 16:40:19', '2022-11-25 01:55:36'),
+(10, 8, 16, 'Articles', 'fa-align-left', '/articles', '*', '2022-07-15 16:40:59', '2022-11-25 01:55:36'),
 (11, 0, 3, 'Interaction', 'fa-archive', '/#', '*', '2022-07-17 21:01:31', '2022-07-18 02:55:24'),
-(12, 11, 4, 'Infirmier', 'fa-medium', '/infirmiers', '*', '2022-07-17 21:02:39', '2022-07-18 02:55:24'),
-(13, 0, 5, 'Services', 'fa-user-secret', '/#', '*', '2022-07-17 22:08:15', '2022-07-18 02:55:24'),
-(14, 13, 6, 'Réception', 'fa-archive', '/#', '*', '2022-07-17 22:11:30', '2022-07-18 02:55:24'),
-(15, 14, 7, 'Malades', 'fa-user-plus', '/malades', '*', '2022-07-17 22:12:34', '2022-07-18 02:55:24'),
-(16, 13, 8, 'Traitement', 'fa-bookmark-o', '/#', '*', '2022-07-18 02:51:57', '2022-07-18 02:55:24'),
-(17, 16, 9, 'Consultation', 'fa-desktop', '/consultations', '*', '2022-07-18 02:53:47', '2022-07-18 02:55:24'),
-(18, 0, 2, 'Positionnement', 'fa-map', '/position', '*', '2022-07-18 02:55:05', '2022-07-18 02:55:24'),
-(19, 0, 19, 'Media manager', 'fa-file', 'media', NULL, '2022-07-18 06:23:49', '2022-07-18 06:23:49'),
-(20, 16, 0, 'Séance', 'fa-asl-interpreting', '/seances', '*', '2022-07-19 18:10:04', '2022-07-19 18:10:04'),
-(21, 16, 0, 'Evaluation de soin', 'fa-sitemap', '/traitements', '*', '2022-07-19 19:41:54', '2022-07-19 19:42:42'),
-(22, 11, 0, 'Utilisateur', 'fa-users', '/utilisateurs', '*', '2022-07-19 20:42:15', '2022-07-19 20:42:15');
+(12, 11, 5, 'Infirmier', 'fa-medium', '/infirmiers', '*', '2022-07-17 21:02:39', '2022-11-25 01:54:26'),
+(13, 0, 6, 'Services', 'fa-user-secret', '/#', '*', '2022-07-17 22:08:15', '2022-11-25 01:54:26'),
+(14, 13, 7, 'Réception', 'fa-archive', '/#', '*', '2022-07-17 22:11:30', '2022-11-25 01:54:26'),
+(15, 14, 8, 'Malades', 'fa-user-plus', '/malades', '*', '2022-07-17 22:12:34', '2022-11-25 01:54:26'),
+(16, 13, 10, 'Traitement', 'fa-bookmark-o', '/#', '*', '2022-07-18 02:51:57', '2022-11-25 01:55:36'),
+(17, 16, 13, 'Consultation', 'fa-desktop', '/consultations', '*', '2022-07-18 02:53:47', '2022-11-25 01:55:36'),
+(18, 0, 2, 'Positionnement', 'fa-map', '/map', '*', '2022-07-18 02:55:05', '2022-11-25 02:38:06'),
+(19, 2, 23, 'Media manager', 'fa-file', 'media', NULL, '2022-07-18 06:23:49', '2022-11-25 01:55:36'),
+(20, 16, 11, 'Séance', 'fa-asl-interpreting', '/seances', '*', '2022-07-19 18:10:04', '2022-11-25 01:55:36'),
+(21, 16, 12, 'Evaluation de soin', 'fa-sitemap', '/traitements', '*', '2022-07-19 19:41:54', '2022-11-25 01:55:36'),
+(22, 11, 4, 'Utilisateur', 'fa-users', '/utilisateurs', '*', '2022-07-19 20:42:15', '2022-11-25 01:54:26'),
+(23, 14, 9, 'Localisation malade', 'fa-bookmark', '/localisations', NULL, '2022-11-25 01:55:19', '2022-11-25 01:55:36');
 
 -- --------------------------------------------------------
 
@@ -899,7 +900,174 @@ INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `inp
 (803, 2, 'admin/traitements', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-19 21:04:12', '2022-07-19 21:04:12'),
 (804, 2, 'admin/traitements', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-19 21:04:29', '2022-07-19 21:04:29'),
 (805, 2, 'admin/traitements/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-19 21:04:31', '2022-07-19 21:04:31'),
-(806, 2, 'admin/utilisateurs', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-19 21:18:51', '2022-07-19 21:18:51');
+(806, 2, 'admin/utilisateurs', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-19 21:18:51', '2022-07-19 21:18:51'),
+(807, 2, 'admin', 'GET', '127.0.0.1', '[]', '2022-07-27 01:13:52', '2022-07-27 01:13:52'),
+(808, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 01:14:05', '2022-07-27 01:14:05'),
+(809, 2, 'admin/printList_malade', 'GET', '127.0.0.1', '[]', '2022-07-27 01:14:10', '2022-07-27 01:14:10'),
+(810, 2, 'admin/malades', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 01:14:23', '2022-07-27 01:14:23'),
+(811, 2, 'admin/article-types', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 01:14:40', '2022-07-27 01:14:40'),
+(812, 2, 'admin/article-types', 'GET', '127.0.0.1', '[]', '2022-07-27 05:23:55', '2022-07-27 05:23:55'),
+(813, 2, 'admin', 'GET', '127.0.0.1', '[]', '2022-07-27 20:21:02', '2022-07-27 20:21:02');
+INSERT INTO `admin_operation_log` (`id`, `user_id`, `path`, `method`, `ip`, `input`, `created_at`, `updated_at`) VALUES
+(814, 2, 'admin', 'GET', '127.0.0.1', '[]', '2022-07-27 20:21:23', '2022-07-27 20:21:23'),
+(815, 2, 'admin', 'GET', '127.0.0.1', '[]', '2022-07-27 20:26:24', '2022-07-27 20:26:24'),
+(816, 2, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:26:38', '2022-07-27 20:26:38'),
+(817, 2, 'admin/articles', 'GET', '127.0.0.1', '[]', '2022-07-27 20:27:27', '2022-07-27 20:27:27'),
+(818, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:28:42', '2022-07-27 20:28:42'),
+(819, 2, 'admin/printList_malade', 'GET', '127.0.0.1', '[]', '2022-07-27 20:28:58', '2022-07-27 20:28:58'),
+(820, 2, 'admin/position', 'GET', '127.0.0.1', '[]', '2022-07-27 20:29:22', '2022-07-27 20:29:22'),
+(821, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:32', '2022-07-27 20:29:32'),
+(822, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:35', '2022-07-27 20:29:35'),
+(823, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:36', '2022-07-27 20:29:36'),
+(824, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:38', '2022-07-27 20:29:38'),
+(825, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:39', '2022-07-27 20:29:39'),
+(826, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:39', '2022-07-27 20:29:39'),
+(827, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:40', '2022-07-27 20:29:40'),
+(828, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:40', '2022-07-27 20:29:40'),
+(829, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:41', '2022-07-27 20:29:41'),
+(830, 2, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 20:29:41', '2022-07-27 20:29:41'),
+(831, 2, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-07-27 21:20:20', '2022-07-27 21:20:20'),
+(832, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-08-29 18:18:53', '2022-08-29 18:18:53'),
+(833, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-08-29 18:19:03', '2022-08-29 18:19:03'),
+(834, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-09-26 10:54:08', '2022-09-26 10:54:08'),
+(835, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2022-09-26 10:56:15', '2022-09-26 10:56:15'),
+(836, 1, 'admin/articles', 'GET', '127.0.0.1', '[]', '2022-09-26 10:57:25', '2022-09-26 10:57:25'),
+(837, 1, 'admin/articles/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 10:57:41', '2022-09-26 10:57:41'),
+(838, 1, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 10:57:50', '2022-09-26 10:57:50'),
+(839, 1, 'admin/printList_malade', 'GET', '127.0.0.1', '[]', '2022-09-26 10:58:01', '2022-09-26 10:58:01'),
+(840, 1, 'admin/utilisateurs', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 10:58:38', '2022-09-26 10:58:38'),
+(841, 1, 'admin/infirmiers', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 10:58:50', '2022-09-26 10:58:50'),
+(842, 1, 'admin/infirmiers/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 10:59:01', '2022-09-26 10:59:01'),
+(843, 1, 'admin/malades', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 10:59:19', '2022-09-26 10:59:19'),
+(844, 1, 'admin/seances', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 10:59:49', '2022-09-26 10:59:49'),
+(845, 1, 'admin/seances/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 10:59:58', '2022-09-26 10:59:58'),
+(846, 1, 'admin/traitements', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:00:15', '2022-09-26 11:00:15'),
+(847, 1, 'admin/consultations', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:01:02', '2022-09-26 11:01:02'),
+(848, 1, 'admin/consultations/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:01:43', '2022-09-26 11:01:43'),
+(849, 1, 'admin/consultations', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:01:53', '2022-09-26 11:01:53'),
+(850, 1, 'admin/article-types', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:02:13', '2022-09-26 11:02:13'),
+(851, 1, 'admin/articles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:02:28', '2022-09-26 11:02:28'),
+(852, 1, 'admin/auth/users', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:02:36', '2022-09-26 11:02:36'),
+(853, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:02:46', '2022-09-26 11:02:46'),
+(854, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:02:57', '2022-09-26 11:02:57'),
+(855, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:03:10', '2022-09-26 11:03:10'),
+(856, 1, 'admin/media', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:03:32', '2022-09-26 11:03:32'),
+(857, 1, 'admin/media', 'GET', '127.0.0.1', '{\"path\":\"\\/article\",\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:03:39', '2022-09-26 11:03:39'),
+(858, 1, 'admin/media', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:03:43', '2022-09-26 11:03:43'),
+(859, 1, 'admin/media', 'GET', '127.0.0.1', '{\"path\":\"\\/\",\"view\":\"list\",\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:03:47', '2022-09-26 11:03:47'),
+(860, 1, 'admin/media', 'GET', '127.0.0.1', '{\"path\":\"\\/\",\"view\":\"table\",\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:03:50', '2022-09-26 11:03:50'),
+(861, 1, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:04:05', '2022-09-26 11:04:05'),
+(862, 1, 'admin/utilisateurs', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:04:09', '2022-09-26 11:04:09'),
+(863, 1, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:08:31', '2022-09-26 11:08:31'),
+(864, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-09-26 11:09:02', '2022-09-26 11:09:02'),
+(865, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-09-26 11:13:00', '2022-09-26 11:13:00'),
+(866, 1, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:13:21', '2022-09-26 11:13:21'),
+(867, 1, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:13:27', '2022-09-26 11:13:27'),
+(868, 1, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-09-26 11:14:04', '2022-09-26 11:14:04'),
+(869, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-23 00:23:47', '2022-11-23 00:23:47'),
+(870, 1, 'admin/printList_malade', 'GET', '127.0.0.1', '[]', '2022-11-23 00:26:02', '2022-11-23 00:26:02'),
+(871, 1, 'admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-23 00:26:31', '2022-11-23 00:26:31'),
+(872, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-23 01:29:23', '2022-11-23 01:29:23'),
+(873, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-23 01:33:47', '2022-11-23 01:33:47'),
+(874, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-25 00:50:04', '2022-11-25 00:50:04'),
+(875, 1, 'admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 00:50:18', '2022-11-25 00:50:18'),
+(876, 1, 'admin/printList_malade', 'GET', '127.0.0.1', '[]', '2022-11-25 00:50:24', '2022-11-25 00:50:24'),
+(877, 1, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 00:50:36', '2022-11-25 00:50:36'),
+(878, 1, 'admin/position', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 00:50:40', '2022-11-25 00:50:40'),
+(879, 1, 'admin/utilisateurs', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 00:50:49', '2022-11-25 00:50:49'),
+(880, 1, 'admin/malades', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 00:51:00', '2022-11-25 00:51:00'),
+(881, 1, 'admin/malades/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 00:51:42', '2022-11-25 00:51:42'),
+(882, 1, 'admin/malades', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 00:56:57', '2022-11-25 00:56:57'),
+(883, 1, 'admin/malades', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\",\"per_page\":\"10\"}', '2022-11-25 01:20:57', '2022-11-25 01:20:57'),
+(884, 1, 'admin/malades', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\",\"per_page\":\"20\"}', '2022-11-25 01:21:01', '2022-11-25 01:21:01'),
+(885, 1, 'admin/malades', 'GET', '127.0.0.1', '{\"per_page\":\"10\",\"_pjax\":\"#pjax-container\"}', '2022-11-25 01:21:09', '2022-11-25 01:21:09'),
+(886, 1, 'admin/malades/4', 'PUT', '127.0.0.1', '{\"name\":\"category\",\"value\":\"Malade non agressif\",\"pk\":\"4\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_editable\":\"1\",\"_method\":\"PUT\"}', '2022-11-25 01:22:02', '2022-11-25 01:22:02'),
+(887, 1, 'admin/malades', 'GET', '127.0.0.1', '{\"per_page\":\"10\"}', '2022-11-25 01:22:06', '2022-11-25 01:22:06'),
+(888, 1, 'admin/malades/4', 'PUT', '127.0.0.1', '{\"name\":\"category\",\"value\":\"Malade agressif\",\"pk\":\"4\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_editable\":\"1\",\"_method\":\"PUT\"}', '2022-11-25 01:22:19', '2022-11-25 01:22:19'),
+(889, 1, 'admin/malades', 'GET', '127.0.0.1', '{\"per_page\":\"10\"}', '2022-11-25 01:22:24', '2022-11-25 01:22:24'),
+(890, 1, 'admin/malades/4', 'PUT', '127.0.0.1', '{\"name\":\"category\",\"value\":\"Malade non agressif\",\"pk\":\"4\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_editable\":\"1\",\"_method\":\"PUT\"}', '2022-11-25 01:22:35', '2022-11-25 01:22:35'),
+(891, 1, 'admin/malades', 'GET', '127.0.0.1', '{\"per_page\":\"10\"}', '2022-11-25 01:41:29', '2022-11-25 01:41:29'),
+(892, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 01:54:06', '2022-11-25 01:54:06'),
+(893, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_order\":\"[{\\\"id\\\":1},{\\\"id\\\":18},{\\\"id\\\":11,\\\"children\\\":[{\\\"id\\\":22},{\\\"id\\\":12}]},{\\\"id\\\":13,\\\"children\\\":[{\\\"id\\\":14,\\\"children\\\":[{\\\"id\\\":15}]},{\\\"id\\\":16,\\\"children\\\":[{\\\"id\\\":20},{\\\"id\\\":21},{\\\"id\\\":17}]}]},{\\\"id\\\":8,\\\"children\\\":[{\\\"id\\\":9},{\\\"id\\\":10}]},{\\\"id\\\":2,\\\"children\\\":[{\\\"id\\\":3},{\\\"id\\\":4},{\\\"id\\\":5},{\\\"id\\\":6},{\\\"id\\\":7},{\\\"id\\\":19}]}]\"}', '2022-11-25 01:54:26', '2022-11-25 01:54:26'),
+(894, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 01:54:27', '2022-11-25 01:54:27'),
+(895, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"parent_id\":\"14\",\"title\":\"Localisation malade\",\"icon\":\"fa-bookmark\",\"uri\":\"\\/localisations\",\"roles\":[\"1\",null],\"permission\":null,\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\"}', '2022-11-25 01:55:19', '2022-11-25 01:55:19'),
+(896, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2022-11-25 01:55:20', '2022-11-25 01:55:20'),
+(897, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_order\":\"[{\\\"id\\\":1},{\\\"id\\\":18},{\\\"id\\\":11,\\\"children\\\":[{\\\"id\\\":22},{\\\"id\\\":12}]},{\\\"id\\\":13,\\\"children\\\":[{\\\"id\\\":14,\\\"children\\\":[{\\\"id\\\":15},{\\\"id\\\":23}]},{\\\"id\\\":16,\\\"children\\\":[{\\\"id\\\":20},{\\\"id\\\":21},{\\\"id\\\":17}]}]},{\\\"id\\\":8,\\\"children\\\":[{\\\"id\\\":9},{\\\"id\\\":10}]},{\\\"id\\\":2,\\\"children\\\":[{\\\"id\\\":3},{\\\"id\\\":4},{\\\"id\\\":5},{\\\"id\\\":6},{\\\"id\\\":7},{\\\"id\\\":19}]}]\"}', '2022-11-25 01:55:36', '2022-11-25 01:55:36'),
+(898, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 01:55:37', '2022-11-25 01:55:37'),
+(899, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2022-11-25 01:55:39', '2022-11-25 01:55:39'),
+(900, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2022-11-25 01:55:47', '2022-11-25 01:55:47'),
+(901, 1, 'admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 01:55:54', '2022-11-25 01:55:54'),
+(902, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-25 01:56:00', '2022-11-25 01:56:00'),
+(903, 1, 'admin/localisations', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 01:56:15', '2022-11-25 01:56:15'),
+(904, 1, 'admin/localisations/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 01:56:19', '2022-11-25 01:56:19'),
+(905, 1, 'admin/localisations/create', 'GET', '127.0.0.1', '[]', '2022-11-25 02:07:46', '2022-11-25 02:07:46'),
+(906, 1, 'admin/localisations', 'POST', '127.0.0.1', '{\"malade_id\":\"1\",\"lat\":\"-1.6961141816025724\",\"long\":\"29.23292414704112\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\"}', '2022-11-25 02:08:26', '2022-11-25 02:08:26'),
+(907, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 02:08:26', '2022-11-25 02:08:26'),
+(908, 1, 'admin/localisations/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:08:29', '2022-11-25 02:08:29'),
+(909, 1, 'admin/localisations', 'POST', '127.0.0.1', '{\"malade_id\":\"2\",\"lat\":\"-1.6961141816025724\",\"long\":\"29.23292414704112\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_previous_\":\"http:\\/\\/localhost:8000\\/admin\\/localisations\"}', '2022-11-25 02:08:48', '2022-11-25 02:08:48'),
+(910, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 02:08:49', '2022-11-25 02:08:49'),
+(911, 1, 'admin/localisations/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:08:52', '2022-11-25 02:08:52'),
+(912, 1, 'admin/localisations', 'POST', '127.0.0.1', '{\"malade_id\":\"3\",\"lat\":\"-1.6770504412575098\",\"long\":\"29.22988612733508\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_previous_\":\"http:\\/\\/localhost:8000\\/admin\\/localisations\"}', '2022-11-25 02:09:06', '2022-11-25 02:09:06'),
+(913, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 02:09:07', '2022-11-25 02:09:07'),
+(914, 1, 'admin/localisations/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:09:09', '2022-11-25 02:09:09'),
+(915, 1, 'admin/localisations', 'POST', '127.0.0.1', '{\"malade_id\":\"4\",\"lat\":\"-16961141816025724\",\"long\":\"29.23032600961107\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_previous_\":\"http:\\/\\/localhost:8000\\/admin\\/localisations\"}', '2022-11-25 02:09:28', '2022-11-25 02:09:28'),
+(916, 1, 'admin/localisations/create', 'GET', '127.0.0.1', '[]', '2022-11-25 02:09:29', '2022-11-25 02:09:29'),
+(917, 1, 'admin/localisations', 'POST', '127.0.0.1', '{\"malade_id\":\"4\",\"lat\":\"-1.6770504412575098\",\"long\":\"29.22988612733508\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\"}', '2022-11-25 02:09:53', '2022-11-25 02:09:53'),
+(918, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 02:09:54', '2022-11-25 02:09:54'),
+(919, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 02:13:34', '2022-11-25 02:13:34'),
+(920, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 02:14:47', '2022-11-25 02:14:47'),
+(921, 1, 'admin/localisations/1', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:14:58', '2022-11-25 02:14:58'),
+(922, 1, 'admin/localisations', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:15:04', '2022-11-25 02:15:04'),
+(923, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 02:16:05', '2022-11-25 02:16:05'),
+(924, 1, 'admin/localisations/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:16:20', '2022-11-25 02:16:20'),
+(925, 1, 'admin/localisations', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:16:26', '2022-11-25 02:16:26'),
+(926, 1, 'admin/localisations', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:23:56', '2022-11-25 02:23:56'),
+(927, 1, 'admin/localisations', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:24:02', '2022-11-25 02:24:02'),
+(928, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:37:45', '2022-11-25 02:37:45'),
+(929, 1, 'admin/auth/menu/18/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:37:49', '2022-11-25 02:37:49'),
+(930, 1, 'admin/auth/menu/18', 'PUT', '127.0.0.1', '{\"parent_id\":\"0\",\"title\":\"Positionnement\",\"icon\":\"fa-map\",\"uri\":\"\\/map\",\"roles\":[\"1\",null],\"permission\":\"*\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/localhost:8000\\/admin\\/auth\\/menu\"}', '2022-11-25 02:38:05', '2022-11-25 02:38:05'),
+(931, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2022-11-25 02:38:06', '2022-11-25 02:38:06'),
+(932, 1, 'admin/auth/menu', 'POST', '127.0.0.1', '{\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_order\":\"[{\\\"id\\\":1},{\\\"id\\\":18},{\\\"id\\\":11,\\\"children\\\":[{\\\"id\\\":22},{\\\"id\\\":12}]},{\\\"id\\\":13,\\\"children\\\":[{\\\"id\\\":14,\\\"children\\\":[{\\\"id\\\":15},{\\\"id\\\":23}]},{\\\"id\\\":16,\\\"children\\\":[{\\\"id\\\":20},{\\\"id\\\":21},{\\\"id\\\":17}]}]},{\\\"id\\\":8,\\\"children\\\":[{\\\"id\\\":9},{\\\"id\\\":10}]},{\\\"id\\\":2,\\\"children\\\":[{\\\"id\\\":3},{\\\"id\\\":4},{\\\"id\\\":5},{\\\"id\\\":6},{\\\"id\\\":7},{\\\"id\\\":19}]}]\"}', '2022-11-25 02:38:09', '2022-11-25 02:38:09'),
+(933, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:38:11', '2022-11-25 02:38:11'),
+(934, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2022-11-25 02:38:15', '2022-11-25 02:38:15'),
+(935, 1, 'admin/map', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 02:38:30', '2022-11-25 02:38:30'),
+(936, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:41:41', '2022-11-25 02:41:41'),
+(937, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:42:43', '2022-11-25 02:42:43'),
+(938, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:43:21', '2022-11-25 02:43:21'),
+(939, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:46:03', '2022-11-25 02:46:03'),
+(940, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:51:04', '2022-11-25 02:51:04'),
+(941, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:51:48', '2022-11-25 02:51:48'),
+(942, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:52:21', '2022-11-25 02:52:21'),
+(943, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:55:16', '2022-11-25 02:55:16'),
+(944, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:57:29', '2022-11-25 02:57:29'),
+(945, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:58:54', '2022-11-25 02:58:54'),
+(946, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 02:59:33', '2022-11-25 02:59:33'),
+(947, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 03:01:18', '2022-11-25 03:01:18'),
+(948, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 03:05:36', '2022-11-25 03:05:36'),
+(949, 1, 'admin/localisations/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 03:05:49', '2022-11-25 03:05:49'),
+(950, 1, 'admin/localisations/1', 'PUT', '127.0.0.1', '{\"malade_id\":\"1\",\"lat\":\"-1.657659780818545\",\"long\":\"29.187100515939807\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/localhost:8000\\/admin\\/localisations\"}', '2022-11-25 03:06:09', '2022-11-25 03:06:09'),
+(951, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 03:06:10', '2022-11-25 03:06:10'),
+(952, 1, 'admin/localisations/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 03:06:14', '2022-11-25 03:06:14'),
+(953, 1, 'admin/localisations/2', 'PUT', '127.0.0.1', '{\"malade_id\":\"2\",\"lat\":\"-1.657659780818545\",\"long\":\"29.198086844003623\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/localhost:8000\\/admin\\/localisations\"}', '2022-11-25 03:06:58', '2022-11-25 03:06:58'),
+(954, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 03:06:58', '2022-11-25 03:06:58'),
+(955, 1, 'admin/localisations/3/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 03:07:03', '2022-11-25 03:07:03'),
+(956, 1, 'admin/localisations/3', 'PUT', '127.0.0.1', '{\"malade_id\":\"3\",\"lat\":\"-1.669327834736623\",\"long\":\"29.194310293731686\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/localhost:8000\\/admin\\/localisations\"}', '2022-11-25 03:08:05', '2022-11-25 03:08:05'),
+(957, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 03:08:06', '2022-11-25 03:08:06'),
+(958, 1, 'admin/localisations/4/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 03:08:10', '2022-11-25 03:08:10'),
+(959, 1, 'admin/localisations/4', 'PUT', '127.0.0.1', '{\"malade_id\":\"4\",\"lat\":\"-1.6377552951011156\",\"long\":\"29.188473806947783\",\"_token\":\"cssDPRQh1VI76tYKQJub5S35WpLIQeRxr7EuWZM3\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/localhost:8000\\/admin\\/localisations\"}', '2022-11-25 03:09:20', '2022-11-25 03:09:20'),
+(960, 1, 'admin/localisations', 'GET', '127.0.0.1', '[]', '2022-11-25 03:09:21', '2022-11-25 03:09:21'),
+(961, 1, 'admin/map', 'GET', '127.0.0.1', '[]', '2022-11-25 03:09:28', '2022-11-25 03:09:28'),
+(962, 1, 'admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 03:20:11', '2022-11-25 03:20:11'),
+(963, 1, 'admin/printList_malade', 'GET', '127.0.0.1', '[]', '2022-11-25 03:20:14', '2022-11-25 03:20:14'),
+(964, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-25 03:26:31', '2022-11-25 03:26:31'),
+(965, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-25 03:27:38', '2022-11-25 03:27:38'),
+(966, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-25 03:28:54', '2022-11-25 03:28:54'),
+(967, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-25 03:32:30', '2022-11-25 03:32:30'),
+(968, 1, 'admin/printList_malade', 'GET', '127.0.0.1', '[]', '2022-11-25 03:32:41', '2022-11-25 03:32:41'),
+(969, 1, 'admin', 'GET', '127.0.0.1', '[]', '2022-11-25 03:32:59', '2022-11-25 03:32:59'),
+(970, 1, 'admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 03:36:42', '2022-11-25 03:36:42'),
+(971, 1, 'admin/seances', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 03:37:11', '2022-11-25 03:37:11'),
+(972, 1, 'admin/map', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2022-11-25 03:37:59', '2022-11-25 03:37:59');
 
 -- --------------------------------------------------------
 
@@ -983,7 +1151,8 @@ INSERT INTO `admin_role_menu` (`role_id`, `menu_id`, `created_at`, `updated_at`)
 (1, 18, NULL, NULL),
 (1, 20, NULL, NULL),
 (1, 21, NULL, NULL),
-(1, 22, NULL, NULL);
+(1, 22, NULL, NULL),
+(1, 23, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1050,8 +1219,8 @@ CREATE TABLE `admin_users` (
 --
 
 INSERT INTO `admin_users` (`id`, `username`, `password`, `name`, `avatar`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', '$2y$10$kf1PvnterPeXy1Us4DBeueLmEP7lb9XWVzL6Zlms2.PWVFBbpGMfK', 'Administrator', NULL, 'fxhAO8GJOzW6mTatn0dEZ4qAYNdYJrfkbS0dKQj82sBJvLSjpleXOZ0J61EO', '2022-07-15 16:19:47', '2022-07-15 16:19:47'),
-(2, 'sumailiroger681@gmail.com', '$2y$10$wZ7OVhElLfO3.gBK3GGRG.K1k2Sz2uwGPzbjxFbNcgILymTdmQA5q', 'roger sumaili', 'images/1855616946.jpg', 'Dvh0rE85zmFx7Md3NkK82aETdFIKQVw7FiO57C5yXTm91TiVkat1HTeFU8dW', '2022-07-15 16:21:20', '2022-07-15 16:21:20'),
+(1, 'admin', '$2y$10$kf1PvnterPeXy1Us4DBeueLmEP7lb9XWVzL6Zlms2.PWVFBbpGMfK', 'Administrator', NULL, 'nSg0cO9tC63aDtbF0l24JFeczYQ492DTiHtEIVb0CP0a1oX9pqRkBS3TmqVU', '2022-07-15 16:19:47', '2022-07-15 16:19:47'),
+(2, 'sumailiroger681@gmail.com', '$2y$10$wZ7OVhElLfO3.gBK3GGRG.K1k2Sz2uwGPzbjxFbNcgILymTdmQA5q', 'roger sumaili', 'images/1855616946.jpg', 'ugerZYuHpWNgRUNs5UQ2khfQsN4YaMSV6beXOSyKopOdLZVl16iDj2ag7s71', '2022-07-15 16:21:20', '2022-07-15 16:21:20'),
 (3, 'user@gmail.com', '$2y$10$cHUysKR4aKfylJQZK6lKYOzaa8U5E2k4wfRR9/ctOsoRICaO/OX9y', 'Cubaka mulume', 'images/alex-nemo-hanse-1140240-unsplash.jpg', NULL, '2022-07-15 16:24:40', '2022-07-15 16:33:24');
 
 -- --------------------------------------------------------
@@ -1250,6 +1419,31 @@ INSERT INTO `infirmiers` (`id`, `nom`, `prenom`, `email`, `telephone`, `sexe`, `
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `localisations`
+--
+
+CREATE TABLE `localisations` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `malade_id` int(11) NOT NULL,
+  `lat` decimal(8,6) NOT NULL,
+  `long` decimal(9,6) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `localisations`
+--
+
+INSERT INTO `localisations` (`id`, `malade_id`, `lat`, `long`, `created_at`, `updated_at`) VALUES
+(1, 1, '-1.657660', '29.187101', '2022-11-25 02:08:26', '2022-11-25 03:06:09'),
+(2, 2, '-1.657660', '29.198087', '2022-11-25 02:08:48', '2022-11-25 03:06:58'),
+(3, 3, '-1.669328', '29.194310', '2022-11-25 02:09:06', '2022-11-25 03:08:05'),
+(4, 4, '-1.637755', '29.188474', '2022-11-25 02:09:53', '2022-11-25 03:09:20');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `malades`
 --
 
@@ -1278,7 +1472,7 @@ INSERT INTO `malades` (`id`, `nom`, `prenom`, `telephone`, `sexe`, `category`, `
 (1, 'Biringanine mbuma', 'jospain', '+243970267037', 'M', 'Malade agressif', '1995-07-17', 'nord kivu goma tmk', 'malade//6b71fdb2540f4ff96d1eb4c9c4d5f38f.jpg', 'Biringanine selestin', '0826734567', 'kamuronza', '2022-07-17 22:30:39', '2022-07-17 22:45:40'),
 (2, 'benjamin', 'kabwika', '+243990084881', 'M', 'Malade non agressif', '1986-06-28', 'nord kivu goma tmk', 'malade//33eae6470471eeebec40fa0f1a0def96.jpg', 'kabwika  safari', '+243826734567', 'BDGL', '2022-07-17 22:36:55', '2022-07-17 22:48:56'),
 (3, 'john kenedit', 'smith kasereka', '+243976630186', 'M', 'Malade non agressif', '1995-07-04', 'nord kivu goma', 'malade//258e51c446597af5ad5819c03e8ca385.jpg', 'kasereka menge', '+243972673567', 'Office goma', '2022-07-17 22:38:23', '2022-07-17 22:49:37'),
-(4, 'jamine scolastique', 'safari', '+243998957572', 'F', 'Malade agressif', '1979-07-27', 'nord kivu goma', 'malade//be7ee2dcf7d161aecc2bf9030bbe1543.jpg', 'Scola mbuma', '0856723651', 'BDGL', '2022-07-17 22:39:42', '2022-07-17 22:42:41'),
+(4, 'jamine scolastique', 'safari', '+243998957572', 'F', 'Malade non agressif', '1979-07-27', 'nord kivu goma', 'malade//be7ee2dcf7d161aecc2bf9030bbe1543.jpg', 'Scola mbuma', '0856723651', 'BDGL', '2022-07-17 22:39:42', '2022-11-25 01:22:35'),
 (5, 'Justin mboma', 'sefu', '+243998957572', 'M', 'Malade agressif', '1992-07-17', 'nord kivu goma', 'malade//8cdc8b694a38c6e60a81f69f46c7a4a5.jpg', 'Justin mboma duro', '+243972673567', 'Office 2 goma', '2022-07-17 22:53:36', '2022-07-18 01:36:26');
 
 -- --------------------------------------------------------
@@ -1312,7 +1506,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (12, '2022_07_18_180039_create_consultations_table', 6),
 (13, '2022_07_19_195428_create_seances_table', 7),
 (14, '2022_07_19_212905_create_traitements_table', 8),
-(15, '2022_07_19_223249_create_utilisateurs_table', 9);
+(15, '2022_07_19_223249_create_utilisateurs_table', 9),
+(17, '2022_11_25_025008_create_localisations_table', 10);
 
 -- --------------------------------------------------------
 
@@ -1576,6 +1771,12 @@ ALTER TABLE `infirmiers`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `localisations`
+--
+ALTER TABLE `localisations`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `malades`
 --
 ALTER TABLE `malades`
@@ -1640,13 +1841,13 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `admin_menu`
 --
 ALTER TABLE `admin_menu`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT pour la table `admin_operation_log`
 --
 ALTER TABLE `admin_operation_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=807;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=973;
 
 --
 -- AUTO_INCREMENT pour la table `admin_permissions`
@@ -1703,6 +1904,12 @@ ALTER TABLE `infirmiers`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT pour la table `localisations`
+--
+ALTER TABLE `localisations`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT pour la table `malades`
 --
 ALTER TABLE `malades`
@@ -1712,7 +1919,7 @@ ALTER TABLE `malades`
 -- AUTO_INCREMENT pour la table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT pour la table `personal_access_tokens`

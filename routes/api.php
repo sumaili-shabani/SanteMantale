@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\{CrudController};
+use App\Http\Controllers\{ArticlesController};
 use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -32,7 +33,11 @@ Route::get('/logout', 'App\Http\Controllers\UserController@logout');
 
 
 //get type_ie=3 articles where are welcome info
-Route::get('/welcomeinfo/', 'App\Http\Controllers\ArticlesController@welcomeInfo');
+Route::get('/get_all_article/', [ArticlesController::class, 'welcomeInfo']);
+Route::get('/get_type_article_type/', [ArticlesController::class, 'getTypeArticleType']);
+Route::get('/fetch_sigle_article/{id}', [ArticlesController::class, 'fetch_sigle_article']);
+Route::get('/fetch_search_article', [ArticlesController::class, 'fetch_search_article']);
+Route::get('/fetch_getType_article/{type_id}', [ArticlesController::class, 'fetch_getType_article']);
 
 /*
 *
@@ -64,6 +69,8 @@ Route::post('/update_utilisateur/{id}', [CrudController::class, 'update_utilisat
 Route::get('/delete_utilisateur/{id}', [CrudController::class, 'delete_utilisateur']);
 
 Route::get('/search_utilisateur', [CrudController::class, 'search_utilisateur']);
+
+//news  
 
 
 

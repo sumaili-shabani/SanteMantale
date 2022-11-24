@@ -72,6 +72,17 @@
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
+  'genealabs/laravel-maps' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'GeneaLabs\\LaravelMaps\\Providers\\Service',
+    ),
+    'aliases' => 
+    array (
+      'Map' => 'GeneaLabs\\LaravelMaps\\Facades\\Map',
+    ),
+  ),
   'intervention/image' => 
   array (
     'providers' => 

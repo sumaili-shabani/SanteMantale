@@ -15,24 +15,120 @@ class HomeController extends Controller
 {
     public function index(Content $content)
     {
+        
+
+        $customer_data      = $this->get_customer_data();
+
+        $mbrMalades         = $this->showCountTable("malades");
+        $mbrConsultation    = $this->showCountTable("consultations");
+        $mbrSeances         = $this->showCountTable("seances");
+
+        $mbrInfirmiers      = $this->showCountTable("infirmiers");
+
+        $dataPoints = array( 
+            array("label"=>"Oxygen", "symbol" => "O","y"=>46.6),
+            array("label"=>"Silicon", "symbol" => "Si","y"=>27.7),
+            array("label"=>"Aluminium", "symbol" => "Al","y"=>13.9),
+            array("label"=>"Iron", "symbol" => "Fe","y"=>5),
+           
+        );
+        
+
+
         return $content
-            ->title('Dashboard')
-            ->description('Description...')
-            ->row(Dashboard::title())
-            ->row(function (Row $row) {
+        ->title('Dashboard 2')
+        ->description('Description du titre')
+        ->view('dashboard2', [
+            'data'              => 'postion',
+            'customer_data'     =>  $customer_data,
+            'mbrMalades'        =>  $mbrMalades,
+            'mbrConsultation'   =>  $mbrConsultation,
+            'mbrSeances'        =>  $mbrSeances,
+            'mbrInfirmiers'     =>  $mbrInfirmiers,
+            'name'              =>  'Patrona shabani sumaili',
+            'dataPoints'        =>  $dataPoints,
+        ]);
+    }
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::environment());
-                });
+    // voir les nombre sur les tables 
+    function showCountTable($table)
+    {
+      $data = DB::table($table)->count();
+      return $data;
+    }
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::extensions());
-                });
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::dependencies());
-                });
-            });
+     public function getLocalisation(Content $content)
+    {
+        
+
+       
+        $initialMarkers2 = [
+            [
+                'position' => [
+                    'lat' => 28.625485,
+                    'lng' => 79.821091
+                ],
+                'draggable' => true
+            ],
+            [
+                'position' => [
+                    'lat' => 28.625293,
+                    'lng' => 79.817926
+                ],
+                'draggable' => false
+            ],
+            [
+                'position' => [
+                    'lat' => 28.625182,
+                    'lng' => 79.81464
+                ],
+                'draggable' => true
+            ]
+        ];
+
+        $initialMarkers = $this->getPosition();
+
+
+        return $content
+        ->title('Localisation')
+        ->description('Localisation actuelle')
+        ->view('map', [
+            
+            'initialMarkers'        =>  $initialMarkers,
+            
+        ]);
+    }
+
+    function getPosition()
+    {
+
+        $data = [];
+        $tab = DB::table('localisations')
+        ->join('malades', 'malades.id', 'localisations.malade_id')
+        ->select("localisations.id","localisations.lat","localisations.long","malades.nom","malades.prenom","malades.telephone","malades.image")
+        ->get();
+
+        foreach ($tab as $row) {
+            // code...
+            array_push($data, array(
+                'position'  => [
+                    'lat'   =>    $row->lat,
+                    'lng'   =>    $row->long
+                ],
+                'infos'      =>  [
+                    'nom'          =>  $row->nom,
+                    'prenom'       =>  $row->prenom,
+                    'telephone'    =>  $row->telephone,
+                    'image'        =>  url('uploads/'.$row->image)
+                ],
+                'draggable' => false
+            ));
+        }
+
+        return $data; 
+
+
     }
 
 

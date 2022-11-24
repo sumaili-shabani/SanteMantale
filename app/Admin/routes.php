@@ -14,6 +14,8 @@ Route::group([
      $router->get('/', 'HomeController@index')->name('home');
      $router->get('/position', 'HomeController@position')->name('position');
 
+     $router->get('/map', 'HomeController@getLocalisation')->name('map');
+
 
 
      //impression des données
@@ -35,6 +37,8 @@ Route::group([
      $router->resource('traitements', Alpha\TraitementController::class);
 
      $router->resource('utilisateurs', Alpha\UtilisateurController::class);
+
+     $router->resource('localisations', Alpha\LocalisationController::class);
 
 });
 

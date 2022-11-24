@@ -12,7 +12,7 @@ class Malade extends Model
 {
     use HasFactory;
     use DefaultDatetimeFormat;
-    use ModelTree;
+
     //table name
     protected $table = 'malades';
     protected $fillable = [
@@ -33,5 +33,10 @@ class Malade extends Model
     public function consultation()
     {
         return $this->hasOne(Consultation::class);
+    }
+
+    public function localisation()
+    {
+        return $this->hasOne(Localisation::class);
     }
 }
